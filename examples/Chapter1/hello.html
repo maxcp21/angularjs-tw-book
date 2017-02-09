@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html lang="en" ng-app>
+<!--注意這里的ng-app屬性, 它是一個應用程式作用域的指令-->
+<head>
+<meta charset="UTF-8">
+<script type="text/javascript" src="../js/angular.min.js"></script>
+<title>Hello</title>
+</head>
+<body>
+	
+</body>
+<div ng-controller="HelloController">
+	<!-- 注意這里的控制器指令 -->
+	<p>{{greeting.text}}, World.</p>
+</div>
+<script type="text/javascript">
+	
+	function HelloController($scope){ // 控制器
+
+		$scope.greeting = {text: 'Hello'}; // 數據
+
+	}
+
+</script>
+</html>
